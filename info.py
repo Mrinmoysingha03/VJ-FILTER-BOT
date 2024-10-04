@@ -74,7 +74,7 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', 'MOVIE_SENDING') # Publ
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+Vkn5zEhixqhhZGI9')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+sQQPTvnaESFkMGFl')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/+KPPR--b6DzIzYTZl')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 't.me/+IHLMlSLMZ8JhZmI1') # Support Chat Link Without https:// or @
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '') # Support Chat Link Without https:// or @
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
@@ -103,7 +103,7 @@ VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '')
 # if verify second shortner is True then fill below url and api
 VERIFY_SND_SHORTLINK_URL = environ.get('VERIFY_SND_SHORTLINK_URL', '')
 VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
-VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/+KPPR--b6DzIzYTZl')
+VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', '')
 
 # Shortlink Info
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False))
@@ -143,7 +143,7 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "particular-caressa-moviesending-ad975e69.koyeb.app/")
+URL = environ.get("URL", "")
 
 
 # Rename Info : If True Then Bot Rename File Else Not
