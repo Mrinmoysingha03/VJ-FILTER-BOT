@@ -71,7 +71,7 @@ CLONE_DATABASE_URI = environ.get('CLONE_DATABASE_URI', "mongodb+srv://mrinmoysin
 PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', 'MOVIE_SENDING') # Public Channel Username Without @ or without https://t.me/ and Bot Is Admin With Full Right.
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+Vkn5zEhixqhhZGI9')
+GRP_LNK = environ.get('GRP_LNK', 'http://t.me/+IHLMlSLMZ8JhZmI1')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+sQQPTvnaESFkMGFl')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/+KPPR--b6DzIzYTZl')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 't.me/+IHLMlSLMZ8JhZmI1') # Support Chat Link Without https:// or @
