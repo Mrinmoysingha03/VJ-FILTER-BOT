@@ -361,5 +361,26 @@ async def auto_approve(client, message: ChatJoinRequest):
         chat = message.chat 
         user = message.from_user  
         await client.approve_chat_join_request(chat_id=chat.id, user_id=user.id)
-        text = f"<b>ʜᴇʟʟᴏ {message.from_user.mention} 👋,\n\nʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ {message.chat.title} ɪs ᴀᴘᴘʀᴏᴠᴇᴅ.\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ - @Movie_Sarkar_Official</b>"
+        text = f"<b>ʜᴇʟʟᴏ {message.from_user.mention} 👋,\n\nʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ {message.chat.title} ɪs ᴀᴘᴘʀᴏᴠᴇᴅ.\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ - @movie_sarkar_bot
+
+📥 * Bot এর দ্বারা কীভাবে মুভি বা সিরিজ ডাউনলোড করবেন?*  
+
+সঠিকভাবে মুভি/সিরিজ পেতে নিচের নিয়ম অনুসরণ করুন  
+
+১)এইখানে জয়েন হন :
+@movie_sarkar_official
+ ২)আমাদের এখানে শুধুমাত্র মুভি বা সিরিজের সঠিক নাম *English* এ লিখুন।  
+ অতিরিক্ত কিছু লিখবেন না। ❌  
+৩) প্রয়োজনে Google থেকে মুভির নাম কপি করে এখানে পেস্ট করুন।  
+
+ENGLISH:  
+
+📥 *HOW to DOWNLOAD movies OR series by bot ?*  
+FOLLOW THE RULES BELOW TO GET THE MOVIE/SERIES CORRECTLY  
+
+1) first to first join here
+  @movie_sarkar_official
+2) Only enter the correct name of the movie or series there in *English*.  
+3)Do not write anything extra. ❌  
+4)If necessary, copy the movie name from Google and paste it here.</b>"
         await client.send_message(chat_id=user.id, text=text)
