@@ -354,12 +354,43 @@ async def auto_approve(client, message: ChatJoinRequest):
         await k.edit_text("<b>Your File/Video is successfully deleted!!!\n\nClick below button to get your deleted file 👇</b>",reply_markup=InlineKeyboardMarkup(btn))
         return
     if AUTO_APPROVE_MODE == True:
-        if not await db.is_user_exist(message.from_user.id):
-            await db.add_user(message.from_user.id, message.from_user.first_name)
-        if message.chat.id == AUTH_CHANNEL:
-            return 
-        chat = message.chat 
-        user = message.from_user  
-        await client.approve_chat_join_request(chat_id=chat.id, user_id=user.id)
-        text = f"<b>ʜᴇʟʟᴏ {message.from_user.mention} 👋,\n\nʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ {message.chat.title} ɪs ᴀᴘᴘʀᴏᴠᴇᴅ.\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ - @movie_sarkar_bot</b>"
-        await client.send_message(chat_id=user.id, text=text)
+    if not await db.is_user_exist(message.from_user.id):
+        await db.add_user(message.from_user.id, message.from_user.first_name)
+    if message.chat.id == AUTH_CHANNEL:
+        return 
+    chat = message.chat 
+    user = message.from_user  
+    await client.approve_chat_join_request(chat_id=chat.id, user_id=user.id)
+    
+    text = f"""<b>ʜᴇʟʟᴏ {message.from_user.mention} 👋,  
+
+ʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ {message.chat.title} ɪs ᴀᴘᴘʀᴏᴠᴇᴅ ✅  
+
+📥 *Bot এর দ্বারা কীভাবে মুভি বা সিরিজ ডাউনলোড করবেন?*  
+
+সঠিকভাবে মুভি/সিরিজ পেতে নিচের নিয়ম অনুসরণ করুন:  
+
+1️⃣ **এইখানে জয়েন হন:**  
+   ➡️ @movie_sarkar_official  
+
+2️⃣ **আমাদের এখানে শুধুমাত্র মুভি বা সিরিজের সঠিক নাম *English* এ লিখুন।**  
+   ⚠️ অতিরিক্ত কিছু লিখবেন না। ❌  
+
+3️⃣ **প্রয়োজনে Google থেকে মুভির নাম কপি করে এখানে পেস্ট করুন।**  
+
+---
+
+### 📥 *HOW to DOWNLOAD movies OR series by bot ?*  
+FOLLOW THE RULES BELOW TO GET THE MOVIE/SERIES CORRECTLY  
+
+1️⃣ **First, join here:**  
+   ➡️ @movie_sarkar_official  
+
+2️⃣ **Only enter the correct name of the movie or series in *English*.**  
+   ⚠️ Do not write anything extra. ❌  
+
+3️⃣ **If necessary, copy the movie name from Google and paste it here.**  
+
+⚡ **Powered by** - @movie_sarkar_bot</b>"""
+
+    await client.send_message(chat_id=user.id, text=text)
