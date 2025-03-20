@@ -107,8 +107,8 @@ VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', '')
 
 # Shortlink Info
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'primeurl.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', '27a7e99316403c96710ae9f84cb18694c395edce')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'papajiurl.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'e9629f256311b35e6390be12a208d3dd221d520d')
 
 # Others
 MAX_B_TN = environ.get("MAX_B_TN", "5")
