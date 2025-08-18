@@ -107,7 +107,7 @@ VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', '')
 
 # Shortlink Info
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'https://vplink.in')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'vplink.in')
 SHORTLINK_API = environ.get('SHORTLINK_API', '1b49ab613116c74d59e4786cc5069049cf7c0c95')
 
 # Others
@@ -166,6 +166,7 @@ LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 # Don't Remove Credit @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
 # Ask Doubt on telegram @KingVJ01
+
 
 
 
