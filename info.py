@@ -107,8 +107,8 @@ VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', '')
 
 # Shortlink Info
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'bongurl.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', '2c37ee573ff91a077f23a2a0ffd0c7c6e0678f45')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'arolink.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'cf086f45711db6507b7150a017d71e4dc640c157')
 
 # Others
 MAX_B_TN = environ.get("MAX_B_TN", "5")
@@ -166,6 +166,7 @@ LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 # Don't Remove Credit @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
 # Ask Doubt on telegram @KingVJ01
+
 
 
 
